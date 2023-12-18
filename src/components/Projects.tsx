@@ -59,16 +59,16 @@ const Projects = () => {
 	}, [])
 	return (
 		<div
-			className='projects-section h-screen relative overflow-x-hidden'
+			className='projects-section h-screen relative overflow-x-hidden flex'
 			ref={container}
 		>
 			<div className='sidebar'>
-				<p className='uppercase text-6xl md:text-8xl mb-12 leading-12'>
+				<p className='uppercase text-6xl md:text-8xl mb-12 leading-12 mr-96'>
 					My <br />
 					Projects
 				</p>
 			</div>
-			<div className='wrapper flex justify-start align-top gap-10 ml-16 md:ml-96 md:mt-32'>
+			<div className='wrapper flex gap-10 ml-16 mt-4 md:ml-96 md:mt-40'>
 				{/* /project 1 Lithings */}
 				<section className='pin w-screen' ref={sections[0]}>
 					<span className='text-gray-400 mb-3'>REACT PROJECT</span>
