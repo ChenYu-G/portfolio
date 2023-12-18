@@ -22,7 +22,7 @@ const Projects = () => {
 		{
 			gsap.context(() => {
 				const scrollTween = gsap.to('.pin', {
-					xPercent: -100 * (sections.length - 1),
+					xPercent: -100 * sections.length + 70,
 					ease: 'none',
 					scrollTrigger: {
 						trigger: container.current,
@@ -68,7 +68,7 @@ const Projects = () => {
 					Projects
 				</p>
 			</div>
-			<div className='wrapper flex gap-10 ml-16 md:ml-96 md:mt-32 mr-14'>
+			<div className='wrapper flex gap-10 ml-16 md:ml-96 md:mt-32'>
 				{/* /project 1 Lithings */}
 				<section className='pin w-screen' ref={sections[0]}>
 					<span className='text-gray-400 mb-3'>REACT PROJECT</span>
