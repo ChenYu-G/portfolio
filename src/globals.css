@@ -44,6 +44,7 @@
 
 	.wrapper {
 		width: 700vw;
+		z-index: -1;
 	}
 	/* divide */
 	.slider-wrapper {
