@@ -27,7 +27,6 @@
 		color: black;
 		margin: 0;
 		line-height: 0;
-		font-size: 6rem;
 		text-align: center;
 	}
 
@@ -44,7 +43,7 @@
 	}
 
 	.wrapper {
-		width: 300vw;
+		width: 350vw;
 	}
 	/* divide */
 	.slider-wrapper {

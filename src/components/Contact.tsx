@@ -32,10 +32,10 @@ const Contact = () => {
 			ref={secRef}
 			className='flex flex-col place-content-center h-screen w-auto'
 		>
-			<h1 ref={h1Ref} className='text-center text-7xl'>
+			<h1 ref={h1Ref} className='text-center text-5xl lg:text-7xl'>
 				CONTACT ME
 			</h1>
-			<div className='text-center text-2xl m-9'>
+			<div className='text-center text-xl lg:text-2xl m-9'>
 				<span>Email:</span> cgeng.charlie@gmail.com
 			</div>
 			<ul className='flex place-content-center text-2xl gap-5'>

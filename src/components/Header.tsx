@@ -49,10 +49,10 @@ const Header = () => {
 	return (
 		<div className='flex flex-col h-screen justify-center'>
 			<div className='pb-12'>
-				<h1 className='text-xl text-center'>
+				<h1 className='md:text-xl text-center'>
 					@ChenYu Geng <span>, I am</span>
 				</h1>
-				<div className='flex-center flex-col h-36 mt-10'>
+				<div className='flex-center flex-col h-36 mt-10 text-3xl md:text-7xl lg:text-8xl'>
 					<p className='same-line' ref={pRefs[0]}>
 						UI/UX DESIGNER
 					</p>

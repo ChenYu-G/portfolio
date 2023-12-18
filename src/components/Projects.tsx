@@ -63,24 +63,24 @@ const Projects = () => {
 			ref={container}
 		>
 			<div className='sidebar'>
-				<p className='uppercase text-8xl mb-12 leading-12'>
+				<p className='uppercase text-6xl md:text-8xl mb-12 leading-12'>
 					My <br />
 					Projects
 				</p>
 			</div>
-			<div className='wrapper flex ml-96'>
+			<div className='wrapper flex gap-10 ml-16 md:ml-96'>
 				{/* /project 1 Lithings */}
 				<section className='pin w-screen' ref={sections[0]}>
 					<span className='text-gray-400 mb-3'>REACT PROJECT</span>
-					<h1 className='text-5xl mb-3' ref={anim[0]}>
+					<h1 className='text-3xl md:text-5xl mb-3' ref={anim[0]}>
 						Lithings
 					</h1>
 
-					<div className='col flex flex-col gap-4'>
-						<p className='text-lg'>
+					<div className='flex flex-col gap-4'>
+						<p className='text-sm md:text-lg'>
 							A social media app, using React.js, Appwrite, React-Query
 						</p>
-						<div className='img-box flex gap-6'>
+						<div className='img-box flex flex-col md:flex-row gap-6 md:gap-6'>
 							<img
 								src='assets/lithings.png'
 								className=' border-gray-300 border-4 w-96 border-opacity-75 rounded-xl'
@@ -119,15 +119,15 @@ const Projects = () => {
 				{/* /project 2 Travel_advisor */}
 				<section className='pin w-screen' ref={sections[1]}>
 					<span className='text-gray-400 mb-3'>REACT PROJECT</span>
-					<h1 className='text-5xl mb-3' ref={anim[1]}>
+					<h1 className='text-3xl md:text-5xl mb-3' ref={anim[1]}>
 						Travel Advisor
 					</h1>
 
 					<div className='col flex flex-col gap-4'>
-						<p className='text-lg'>
+						<p className='text-sm md:text-lg'>
 							Travel advisor app, using React, Google Map API and Rapid API
 						</p>
-						<div className='img-box flex gap-6'>
+						<div className='img-box flex flex-col md:flex-row gap-6 md:gap-6'>
 							<img
 								src='assets/travel_advisor.png'
 								className=' border-gray-300 border-4 w-96 border-opacity-75 rounded-xl'
@@ -163,17 +163,18 @@ const Projects = () => {
 						</div>
 					</div>
 				</section>
+				{/* /project 3 Restaurant UI Project */}
 				<section className='pin w-screen' ref={sections[2]}>
 					<span className='text-gray-400 mb-3'>REACT PROJECT</span>
-					<h1 className='text-5xl mb-3' ref={anim[2]}>
+					<h1 className='text-3xl md:text-5xl mb-3' ref={anim[2]}>
 						Restaurant UI Project
 					</h1>
 
-					<div className='col flex flex-col gap-4'>
-						<p className='text-lg'>
+					<div className='flex flex-col gap-4'>
+						<p className='text-sm md:text-lg'>
 							A Restaurant UI/UX project, using React.js
 						</p>
-						<div className='img-box flex gap-6'>
+						<div className='img-box flex flex-col md:flex-row gap-6 md:gap-6'>
 							<img
 								src='assets/rock_1.png'
 								className=' border-gray-300 border-4 w-96 border-opacity-75 rounded-xl'

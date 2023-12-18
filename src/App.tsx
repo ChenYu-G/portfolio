@@ -8,7 +8,7 @@ import './globals.css'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import AboutMe from './components/AboutMe'
-import TopNav from './components/TopNav'
+// import TopNav from './components/TopNav'
 import Divide from './components/Divide'
 
 function App() {
@@ -22,17 +22,18 @@ function App() {
 		requestAnimationFrame(raf)
 	}, [])
 	/** ***************************** */
-	const navLinks = [
-		{ to: '/', label: 'Home' },
-		{ to: '/about', label: 'About' },
-		{ to: '/contact', label: 'Contact' },
-	]
+	// const navLinks = [
+	// 	{ to: '/', label: 'Home' },
+	// 	{ to: '/about', label: 'About' },
+	// 	{ to: '/contact', label: 'Contact' },
+	// ]
 	return (
 		<Router>
 			<div>
-				<TopNav links={navLinks} />
+				{/* <TopNav links={navLinks} /> */}
 				<Header />
 				<Divide />
+
 				<AboutMe />
 				<Divide />
 				<Projects />
