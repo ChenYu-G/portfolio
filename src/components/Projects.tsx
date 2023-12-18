@@ -30,7 +30,7 @@ const Projects = () => {
 						scrub: 1,
 						end: '+=2000',
 						snap: 1 / (sections.length - 1),
-						markers: true,
+						// markers: true,
 					},
 				})
 				sections.forEach((section, index) => {
@@ -68,7 +68,7 @@ const Projects = () => {
 					Projects
 				</p>
 			</div>
-			<div className='wrapper flex gap-10 ml-16 md:ml-96 md:mt-32'>
+			<div className='wrapper flex justify-start align-top gap-10 ml-16 md:ml-96 md:mt-32'>
 				{/* /project 1 Lithings */}
 				<section className='pin w-screen' ref={sections[0]}>
 					<span className='text-gray-400 mb-3'>REACT PROJECT</span>
