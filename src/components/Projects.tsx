@@ -70,7 +70,7 @@ const Projects = () => {
 					Projects
 				</p>
 			</div>
-			<div className='wrapper flex gap-10 mt-4 ml-0 absolute top-4 md:mt-80 left-96'>
+			<div className='wrapper flex gap-10 mt-4 ml-0 absolute top-4 md:mt-64 left-96'>
 				{/* /project 1 Lithings */}
 				<section className='pin w-screen' ref={sections[0]}>
 					<span className='text-gray-400 mb-3'>REACT PROJECT</span>
