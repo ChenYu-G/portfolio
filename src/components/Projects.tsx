@@ -11,6 +11,7 @@ const Projects = () => {
 		useRef<HTMLDivElement>(null),
 		useRef<HTMLDivElement>(null),
 		useRef<HTMLDivElement>(null),
+		useRef<HTMLDivElement>(null),
 	]
 	const anim: React.RefObject<HTMLHeadingElement>[] = [
 		useRef<HTMLHeadingElement>(null),
@@ -215,7 +216,7 @@ const Projects = () => {
 				{/* /project 4 Vote your like project */}
 				<section className='pin w-screen' ref={sections[3]}>
 					<span className='text-gray-400 mb-3'>NEXT.JS PROJECT</span>
-					<h1 className='text-3xl md:text-5xl mb-3' ref={anim[2]}>
+					<h1 className='text-3xl md:text-5xl mb-3' ref={anim[3]}>
 						Vote your like Next.js Project
 					</h1>
 
