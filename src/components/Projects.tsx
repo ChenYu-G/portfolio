@@ -16,6 +16,7 @@ const Projects = () => {
 		useRef<HTMLHeadingElement>(null),
 		useRef<HTMLHeadingElement>(null),
 		useRef<HTMLHeadingElement>(null),
+		useRef<HTMLHeadingElement>(null),
 	]
 
 	useLayoutEffect(() => {
@@ -200,6 +201,55 @@ const Projects = () => {
 							<a
 								className='hover:bg-gray-50 p-2'
 								href='https://rock-restaurant.vercel.app/'
+								target='_blank'
+							>
+								<p className='flex items-center'>
+									Project Preview
+									<IoArrowForwardSharp />
+								</p>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				{/* /project 4 Vote your like project */}
+				<section className='pin w-screen' ref={sections[3]}>
+					<span className='text-gray-400 mb-3'>NEXT.JS PROJECT</span>
+					<h1 className='text-3xl md:text-5xl mb-3' ref={anim[2]}>
+						Vote your like Next.js Project
+					</h1>
+
+					<div className='flex flex-col gap-4'>
+						<p className='text-sm md:text-lg'>
+							A full stack project, using Next.js, NextUI, MongoDB, Prisma,
+							Clerk, etc.
+						</p>
+						<div className='img-box flex flex-col md:flex-row gap-6 md:gap-6'>
+							<img
+								src='assets/vote1.png'
+								className=' border-gray-300 border-4 w-96 border-opacity-75 rounded-xl'
+								alt='vote1'
+							/>
+							<img
+								src='assets/vote2.png'
+								className=' border-gray-300 border-4 w-96 border-opacity-75 rounded-xl'
+								alt='vote1'
+							/>
+						</div>
+						<div className='flex gap-7'>
+							<a
+								className='hover:bg-gray-50 p-2'
+								href='https://github.com/ChenYu-G/next-vote-app'
+								target='_blank'
+							>
+								<p className='flex items-center'>
+									GitHub Link
+									<IoArrowForwardSharp />
+								</p>
+							</a>
+							<a
+								className='hover:bg-gray-50 p-2'
+								href='https://next-vote-app.vercel.app/'
 								target='_blank'
 							>
 								<p className='flex items-center'>
