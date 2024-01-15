@@ -1,16 +1,16 @@
 import Lenis from '@studio-freight/lenis'
 import { useEffect, useRef } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Hero from './components/Hero'
 
 import './globals.css'
+import './colorfulbg.css'
 
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import AboutMe from './components/AboutMe'
-// import TopNav from './components/TopNav'
 import Divide from './components/Divide'
 import TopNav from './components/TopNav'
+import Hero from './components/Hero'
 
 function App() {
 	/** lenis set up  */

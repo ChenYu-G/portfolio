@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
-import './colorfulbg.css'
+
 const Hero = () => {
 	const pRefs: React.RefObject<HTMLParagraphElement>[] = [
 		useRef<HTMLParagraphElement>(null),
