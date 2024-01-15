@@ -47,7 +47,7 @@ const allProjects = [
 		description: 'BigBang Artwork, using WordPress',
 		imageUrl_1: 'assets/ba_1.png',
 		imageUrl_2: 'assets/ba_2.png',
-		deployedLink: 'https://www/bigbangartwork.org/',
+		deployedLink: 'https://www.bigbangartwork.org/',
 	},
 ]
 
