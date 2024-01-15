@@ -49,10 +49,10 @@ const AboutMe = () => {
 		<div className='h-screen flex justify-center items-center'>
 			<div className='w-3/5 text-xl leading-10'>
 				<p ref={pRefs[0]} data-bg-color='#eeeeee' data-fg-color='black'>
-					Hello, friends. My name is ChenYu. I'm from China and now in the
-					United States right now. I'm a master's graduate in Information
-					Technology and Management. I love UI/UX design, learning new and
-					interesting web technologies, and exploring user experience solutions!
+					Hello, friends. My name is ChenYu. I'm from China and in the United
+					States right now. I'm a master's graduate in Information Technology
+					and Management. I love UI/UX design, learning new and interesting web
+					technologies, and exploring user experience solutions!
 				</p>
 			</div>
 		</div>

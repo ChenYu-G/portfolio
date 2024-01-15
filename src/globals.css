@@ -86,4 +86,8 @@
 	.flex-start {
 		@apply flex justify-start items-center;
 	}
+
+	.project-img {
+		@apply border-gray-300 border-4 w-72 md:w-[24rem] xl:w-[32rem] border-opacity-75 rounded-xl;
+	}
 }
