@@ -1,5 +1,5 @@
 import Lenis from '@studio-freight/lenis'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Hero from './components/Hero'
 
@@ -10,6 +10,7 @@ import Contact from './components/Contact'
 import AboutMe from './components/AboutMe'
 // import TopNav from './components/TopNav'
 import Divide from './components/Divide'
+import TopNav from './components/TopNav'
 
 function App() {
 	/** lenis set up  */
@@ -22,22 +23,45 @@ function App() {
 		requestAnimationFrame(raf)
 	}, [])
 	/** ***************************** */
-	// const navLinks = [
-	// 	{ to: '/', label: 'Home' },
-	// 	{ to: '/about', label: 'About' },
-	// 	{ to: '/contact', label: 'Contact' },
-	// ]
+	const contactRef = useRef<HTMLDivElement | null>(null)
+
+	const scrollToContact = () => {
+		if (contactRef.current) {
+			// Using smooth scroll behavior
+			contactRef.current.scrollIntoView({ behavior: 'smooth' })
+		}
+		console.log('hello')
+	}
+
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		})
+	}
+
+	const navLinks = [
+		{ label: 'Home', onClick: scrollToTop },
+		// { to: '/about', label: 'About' },
+		{ label: 'Contact', onClick: scrollToContact },
+		{
+			to: 'https://raw.githubusercontent.com/ChenYu-G/portfolio/main/public/assets/ChenYu_Geng%202024.pdf',
+			label: 'Download my resume',
+		},
+	]
+
 	return (
 		<Router>
 			<div className='colorful'>
-				{/* <TopNav links={navLinks} /> */}
+				<TopNav links={navLinks} />
 				<Hero />
 				<Divide />
-
 				<AboutMe />
 				<Divide />
 				<Projects />
-				<Contact />
+				<div ref={contactRef}>
+					<Contact />
+				</div>
 			</div>
 		</Router>
 	)

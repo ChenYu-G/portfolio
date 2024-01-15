@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
+
 gsap.registerPlugin(ScrollTrigger)
 
 const Contact = () => {

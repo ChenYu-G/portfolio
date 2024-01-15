@@ -102,7 +102,7 @@ const Projects = () => {
 			ref={container}
 		>
 			<div className='sidebar'>
-				<p className='uppercase text-6xl md:text-8xl leading-12 mr-96'>
+				<p className='uppercase text-6xl md:text-8xl leading-12 mr-96 text-[#67942d74]'>
 					My <br />
 					Projects
 				</p>
