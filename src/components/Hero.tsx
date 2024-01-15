@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
-
-const Header = () => {
+import './colorfulbg.css'
+const Hero = () => {
 	const pRefs: React.RefObject<HTMLParagraphElement>[] = [
 		useRef<HTMLParagraphElement>(null),
 		useRef<HTMLParagraphElement>(null),
@@ -42,14 +42,14 @@ const Header = () => {
 					rotateX: 90,
 					stagger: 0.05,
 				},
-				'<2'
+				'<3'
 			)
 		})
 	}, [])
 	return (
 		<div className='flex flex-col h-screen justify-center'>
-			<div className='pb-12'>
-				<h1 className='md:text-xl text-center'>
+			<div className='blur-text pb-12'>
+				<h1 className='md:text-xl text-center text-gray-600'>
 					@ChenYu Geng <span>, I am</span>
 				</h1>
 				<div className='flex-center flex-col h-36 mt-10 text-3xl md:text-7xl lg:text-8xl'>
@@ -74,4 +74,4 @@ const Header = () => {
 	)
 }
 
-export default Header
+export default Hero

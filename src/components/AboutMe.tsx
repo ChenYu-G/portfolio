@@ -46,7 +46,7 @@ const AboutMe = () => {
 	}, [])
 
 	return (
-		<div className='h-screen flex justify-center items-center'>
+		<div className=' h-screen flex justify-center items-center'>
 			<div className='w-3/5 text-xl leading-10'>
 				<p ref={pRefs[0]} data-bg-color='#eeeeee' data-fg-color='black'>
 					Hello, friends. My name is ChenYu. I'm from China and in the United

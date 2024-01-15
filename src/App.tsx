@@ -1,7 +1,7 @@
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Header from './components/Header'
+import Hero from './components/Hero'
 
 import './globals.css'
 
@@ -29,9 +29,9 @@ function App() {
 	// ]
 	return (
 		<Router>
-			<div>
+			<div className='colorful'>
 				{/* <TopNav links={navLinks} /> */}
-				<Header />
+				<Hero />
 				<Divide />
 
 				<AboutMe />

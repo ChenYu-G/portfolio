@@ -30,7 +30,7 @@ const Contact = () => {
 	return (
 		<div
 			ref={secRef}
-			className='flex flex-col place-content-center h-screen w-auto'
+			className=' flex flex-col place-content-center h-screen w-auto'
 		>
 			<h1 ref={h1Ref} className='text-center text-5xl lg:text-7xl'>
 				CONTACT ME
